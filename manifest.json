@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Leetcode Constraints Hider",
+  "version": "1.0",
+  "description": "Hide the 'Constraints' section from leetcode to not divulge any performance hints.",
+
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+        "https://www.leetcode.com/problems/*",
+        "https://leetcode.com/problems/*"
+      ]
+    }
+  ]
+}
+
